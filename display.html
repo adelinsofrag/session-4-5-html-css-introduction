@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplu Proprietatea Display</title>
+  <style>
+    /* Explicarea proprietății 'display': */
+    /* - 'block': Elementul este afișat ca un bloc și ocupă întreaga lățime disponibilă. */
+    /* - 'inline': Elementul este afișat ca un element în linie și nu ocupă întreaga lățime disponibilă. */
+    /* - 'inline-block': Elementul este afișat ca un element în linie, dar poate avea lățime și înălțime definite. */
+    /* - 'none': Elementul nu este afișat deloc pe pagină și nu ocupă spațiu în layout. */
+    /* - 'flex': Elementul devine un container flex, permițând controlul poziționării și alineării conținutului. */
+
+    /* Exemple de utilizare a proprietății 'display': */
+
+    /* Exemplu 1: display: block; */
+    div.block-example {
+      display: block;
+      background-color: red;
+      width: 100px;
+      height: 50px;
+      margin-bottom: 10px;
+    }
+
+    /* Exemplu 2: display: inline; */
+    span.inline-example {
+      display: inline;
+      background-color: blue;
+      padding: 5px;
+      margin-right: 5px;
+    }
+
+    /* Exemplu 3: display: inline-block; */
+    span.inline-block-example {
+      display: inline-block;
+      background-color: green;
+      width: 100px;
+      height: 50px;
+      margin-right: 5px;
+    }
+
+    /* Exemplu 4: display: none; */
+    p.none-example {
+      display: none;
+    }
+
+    /* Exemplu 5: display: flex; */
+    div.flex-example {
+      display: flex;
+      background-color: orange;
+    }
+
+    div.flex-example > div {
+      width: 100px;
+      height: 50px;
+      margin-right: 5px;
+    }
+
+    /* Stilurile comune pentru toate exemplele */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Exemplu Proprietatea Display</h1>
+
+  <!-- Exemplu 1: display: block; -->
+  <div class="block-example"></div>
+
+  <!-- Exemplu 2: display: inline; -->
+  <span class="inline-example">Text inline 1</span>
+  <span class="inline-example">Text inline 2</span>
+
+  <!-- Exemplu 3: display: inline-block; -->
+  <span class="inline-block-example">Text inline-block 1</span>
+  <span class="inline-block-example">Text inline-block 2</span>
+
+  <!-- Exemplu 4: display: none; -->
+  <p class="none-example">Acest paragraf nu va fi afișat.</p>
+
+  <!-- Exemplu 5: display: flex; -->
+  <div class="flex-example">
+    <div style="background-color: yellow;"></div>
+    <div style="background-color: pink;"></div>
+  </div>
+</body>
+</html>

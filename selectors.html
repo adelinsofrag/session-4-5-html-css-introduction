@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exemplu Selectoare CSS</title>
+    <style>
+      /* Selector universal: Se aplică tuturor elementelor de pe pagină */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Selector de tip: Se aplică tuturor elementelor de același tip */
+      h1 {
+        color: blue;
+      }
+
+      p {
+        color: green;
+      }
+
+      /* Selector de clasă: Se aplică elementelor cu clasa specificată */
+      .important {
+        font-weight: bold;
+      }
+
+      /* Selector de ID: Se aplică elementului cu ID-ul specificat */
+      #special {
+        background-color: yellow;
+      }
+
+      /* Selector de atribut: Se aplică elementelor cu atributul specificat */
+      [target] {
+        text-decoration: underline;
+      }
+
+      /* Selector de grup: Se aplică mai multor tipuri de elemente */
+      h1,
+      h2,
+      h3 {
+        margin-bottom: 10px;
+      }
+
+      /* Selector de descendență: Se aplică elementului din interiorul altui element */
+      ul li {
+        list-style-type: circle;
+      }
+
+      /* Selector de copil direct: Se aplică elementului care este copil direct al altui element */
+      ul > li {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplu de Selectoare CSS</h1>
+    <p class="important">Acesta este un paragraf important cu clasa "important".</p>
+    <p>Acesta este un alt paragraf obișnuit.</p>
+
+    <ul>
+      <li>Elementul 1</li>
+      <li>Elementul 2</li>
+    </ul>
+
+    <p target="blank">Acesta este un link către un alt site.</p>
+
+    <h2 id="special">Titlu cu ID special</h2>
+  </body>
+</html>
