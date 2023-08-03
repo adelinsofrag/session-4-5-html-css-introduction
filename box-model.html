@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Box Model Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+
+      /* Example 1 - Default Box Model */
+      .box-example {
+        width: 200px;
+        height: 100px;
+        background-color: blue;
+        border: 10px solid red;
+        padding: 20px;
+        margin: 30px;
+      }
+
+      /* Example 2 - Box Sizing: Border-Box */
+      .border-box-example {
+        width: 200px;
+        height: 100px;
+        background-color: green;
+        border: 10px solid red;
+        padding: 20px;
+        margin: 30px;
+        box-sizing: border-box;
+      }
+
+      /* Example 3 - Box Sizing: Content-Box */
+      .content-box-example {
+        width: 200px;
+        height: 100px;
+        background-color: yellow;
+        border: 10px solid red;
+        padding: 20px;
+        margin: 30px;
+        box-sizing: content-box;
+      }
+
+      /* Common style for the explanation */
+      p {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Box Model Example</h1>
+
+    <h2>Example 1: Default Box Model</h2>
+    <p>
+      In the default box model, the element's width and height are affected by its content, padding,
+      border, and margin:
+    </p>
+    <div class="box-example">
+      <p>Content</p>
+    </div>
+
+    <h2>Example 2: Box Sizing - Border-Box</h2>
+    <p>
+      The border-box value includes padding and border within the element's total width and height:
+    </p>
+    <div class="border-box-example">
+      <p>Content</p>
+    </div>
+
+    <h2>Example 3: Box Sizing - Content-Box</h2>
+    <p>
+      The content-box value excludes padding and border from the element's total width and height:
+    </p>
+    <div class="content-box-example">
+      <p>Content</p>
+    </div>
+
+    <h2>Explanation</h2>
+    <p>The Box Model consists of four parts:</p>
+    <ul>
+      <li>Content: The actual content of the element (e.g., text or images).</li>
+      <li>Padding: The space between the content and the element's border.</li>
+      <li>Border: A line that surrounds the content and padding.</li>
+      <li>Margin: The space outside the element, which separates it from other elements.</li>
+    </ul>
+    <p>
+      By default, the width and height of an element are calculated based on the content, padding,
+      border, and margin. However, you can control the box sizing behavior using the
+      <code>box-sizing</code> property.
+    </p>
+  </body>
+</html>
