@@ -16,6 +16,15 @@ header h1 {
   margin: 0;
 }
 
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+} 
+
 nav {
   background-color: #444;
   color: #fff;
@@ -23,17 +32,7 @@ nav {
   padding: 0.5rem;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
 nav li {
-  display: inline-block;
-  margin-right: 1rem;
-}
-
-nav li:last-child {
   margin-right: 0;
 }
 
@@ -55,4 +54,15 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1rem;
+}
+
+
+/* CSS for child styling */
+.child-styling {
+  color: white;
+  background-color: black;
+  padding: 20px 10px;
+  margin-block-start: unset;
+  margin-bottom: 5px;
+  border: 15px solid yellowgreen;
 }

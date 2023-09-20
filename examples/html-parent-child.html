@@ -2,11 +2,22 @@
 <html>
   <head>
     <title>Parent <> Child</title>
+
+    <style>
+      .child-styling {
+        color: white;
+        background-color: black;
+        padding: 20px 10px;
+        margin-block-start: unset;
+        margin-bottom: 5px;
+        border: 15px solid yellowgreen;
+      }
+    </style>
   </head>
   <body>
     <!-- Element părinte -->
     <div id="parinte">
-      <h1>Acesta este un element "părinte"</h1>
+      <h1 style="background:yellow;">Acesta este un element "părinte"</h1n>
       <h2>Mai bine zis, div-ul de mai sus - vezi asta cu DevTools 👨‍💻</h2>
 
       <h3>
@@ -15,9 +26,9 @@
       </h3>
 
       <!-- Elemente copil -->
-      <p>Acesta este un paragraf copil 1.</p>
-      <p>Acesta este un paragraf copil 2.</p>
-      <p>Acesta este un paragraf copil 3.</p>
+      <p class="child-styling">Acesta este un paragraf copil 1.</p>
+      <p class="child-styling">Acesta este un paragraf copil 2.</p>
+      <p class="child-styling">Acesta este un paragraf copil 3.</p>
     </div>
   </body>
 </html>
